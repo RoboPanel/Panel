@@ -1,0 +1,27 @@
+.box {
+    box-shadow: 0 0 0 1px rgba(89, 105, 128, .1), 0 1px 3px 0 rgba(89, 105, 128, .1), 0 1px 2px 0 rgba(0, 0, 0, .05) !important;
+}
+
+.alert-danger {
+    color: #ffffff !important;
+    background: #d64242 !important;
+    border: 1px solid #841d1d;
+}
+
+.alert-info {
+    color: #ffffff !important;
+    background: #408fec !important;
+    border: 1px solid #1055a5;
+}
+
+.alert-success {
+    color: #ffffff !important;
+    background: #51b060 !important;
+    border: 1px solid #2b5f33;
+}
+
+.alert-warning {
+    color: #ffffff !important;
+    background: #fa9636 !important;
+    border: 1px solid #b45b05;
+}

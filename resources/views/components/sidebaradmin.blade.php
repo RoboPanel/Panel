@@ -29,6 +29,10 @@
         padding: 0.875rem 1.25rem;
         font-size: 1.2rem;
         }
+        #sidebar-wrapper .sidebar-subheading {
+        padding: 0.875rem 1.25rem;
+        font-size: 1.0rem;
+        }
         #sidebar-wrapper .list-group {
         width: 15rem;
         }
@@ -58,9 +62,10 @@
         <div class="bg-light border-right" id="sidebar-wrapper">
         <div class="sidebar-heading">{{ config('app.name', 'RoboPanel') }}</div>
         <div class="list-group list-group-flush">
-            <a href="account" class="list-group-item list-group-item-action bg-light">My Account</a>
-            <a href="security" class="list-group-item list-group-item-action bg-light">Security</a>
-            <a href="api" class="list-group-item list-group-item-action bg-light">API</a>
+            <a href="/admin" class="list-group-item list-group-item-action bg-light">Overview</a>
+            <a href="/admin/settings" class="list-group-item list-group-item-action bg-light">Settings</a>
+            <a href="/admin/api" class="list-group-item list-group-item-action bg-light">API</a>
+            <div class="sidebar-subheading"> Test </div>
             <a href="" class="list-group-item list-group-item-action bg-light">Servers</a>
         </div>
         </div>
