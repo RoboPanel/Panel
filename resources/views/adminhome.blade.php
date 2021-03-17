@@ -1,4 +1,4 @@
-<?
+<?php
 $latest = file_get_contents('https://robopanel.io/latestpanel.txt');
 ?>
 
@@ -14,7 +14,7 @@ $latest = file_get_contents('https://robopanel.io/latestpanel.txt');
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-                    You are running RoboPanel verison {{ config('app.version', 'Unable to find version!') }}
+                    You are running RoboPanel verison {{ config('app.version', 'Unable to find version!') }}. Latest: <?php echo $latest; ?>
                 </div>
             </div>
         </div>
