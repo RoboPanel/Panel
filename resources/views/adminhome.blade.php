@@ -1,6 +1,7 @@
 <?php
 $latest = file_get_contents('https://robopanel.io/latestpanel.txt');
-$current = config('app.version', 'Unable to find version!')
+$current = config('app.version', 'Unable to find version!');
+$trimmed = trim($latest, "\n");
 ?>
 
 @include('components.sidebaradmin')
@@ -17,11 +18,11 @@ $current = config('app.version', 'Unable to find version!')
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 @if($current == $latest)
                 <div class="alert-success p-6 bg-white border-b border-gray-200">
-                    You are running the latest version of RoboPanel! Latest: <?php echo $latest; ?>
+                    You are running the latest version of RoboPanel! Latest: <?php echo $trimmed; ?>
                 </div>
                 @elseif($current != $latest)
                 <div class="alert-danger p-6 bg-white border-b border-gray-200">
-                    Your version of RoboPanel is not up to date! Your version: <?php echo $current; ?>. Latest: <?php echo $latest; ?>
+                    Your version of RoboPanel is not up to date! Your version: <?php echo $current; ?>. Latest: <?php echo $trimmed; ?>
                 </div>
                 @endif
                 
