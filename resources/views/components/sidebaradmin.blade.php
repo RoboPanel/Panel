@@ -67,6 +67,8 @@
             <a href="/admin/api" class="list-group-item list-group-item-action bg-light">API</a>
             <div class="sidebar-subheading"> Management </div>
             <a href="/admin/servers" class="list-group-item list-group-item-action bg-light">Servers</a>
+            <a href="/admin/nodes" class="list-group-item list-group-item-action bg-light">Nodes</a>
+            <a href="/admin/users" class="list-group-item list-group-item-action bg-light">Users</a>
         </div>
         </div>
         <!-- /#sidebar-wrapper -->
