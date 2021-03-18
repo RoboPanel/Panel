@@ -65,8 +65,8 @@
             <a href="/admin" class="list-group-item list-group-item-action bg-light">Overview</a>
             <a href="/admin/settings" class="list-group-item list-group-item-action bg-light">Settings</a>
             <a href="/admin/api" class="list-group-item list-group-item-action bg-light">API</a>
-            <div class="sidebar-subheading"> Test </div>
-            <a href="" class="list-group-item list-group-item-action bg-light">Servers</a>
+            <div class="sidebar-subheading"> Management </div>
+            <a href="/admin/servers" class="list-group-item list-group-item-action bg-light">Servers</a>
         </div>
         </div>
         <!-- /#sidebar-wrapper -->
