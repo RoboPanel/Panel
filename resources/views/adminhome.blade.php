@@ -25,7 +25,6 @@ $trimmed = trim($latest, "\n");
                     Your version of RoboPanel is not up to date! Your version: <?php echo $current; ?>. Latest: <?php echo $trimmed; ?>
                 </div>
                 @endif
-                
             </div>
         </div>
     </div>
