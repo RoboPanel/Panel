@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <img src="https://robopanel.io/logo.png" class="w-20 h-20 fill-current text-gray-500" />
+                        <img src="https://robopanel.io/logo.png" class="block h-10 w-auto fill-current text-gray-600" />
                     </a>
                 </div>
 
