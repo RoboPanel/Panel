@@ -1,12 +1,10 @@
 import React from 'react';
-import UserStore from './stores/UserStore'
-import './App.css';
 
-class App extends React.Component {
+class LoginForm extends React.Component {
 
   render() {
   return (
-      <div className="app">
+      <div className="loginForm">
 
       </div>
     );
@@ -14,4 +12,4 @@ class App extends React.Component {
 
 }
 
-export default App;
+export default LoginForm;
