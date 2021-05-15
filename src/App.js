@@ -67,13 +67,43 @@ class App extends React.Component {
 
   render() {
 
-    
+    if (UserStore.loading) {
+      return (
+        <div className="app">
+          <div classname='container'>
+            <div class="loader"></div>
+          </div>
+        </div>
+      );
+    }
 
-    return (
-      <div className="app">
+    else {
 
-      </div>
-    );
+      if (UserStore.isLoggedIn) {
+        return (
+          <div className="app">
+            <div classname='container'>
+              Welcome {UserStore.username}
+              
+              <SubmitButton
+                text={'Log out'}
+                disabled={false}
+                onClick={ () => this.doLogout() }
+              />
+
+            </div>
+          </div>
+        );
+      }
+
+      return (
+        <div className="app">
+          <div classname='container'>
+            <LoginForm />
+          </div>
+        </div>
+      );
+    }
   }
 
 }
