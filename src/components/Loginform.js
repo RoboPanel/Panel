@@ -25,7 +25,7 @@ class LoginForm extends React.Component {
   }
 
   resetForm() {
-    this.state({
+    this.setState({
       username: '',
       password: '',
       buttonDisabled: false
@@ -101,7 +101,7 @@ class LoginForm extends React.Component {
         <SubmitButton
           text='Login'
           disabled={this.state.buttonDisabled}
-          onClick={ () => this.doLogin }
+          onClick={ () => this.doLogin() }
         />
 
       </div>

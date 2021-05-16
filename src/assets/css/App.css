@@ -68,6 +68,7 @@ body, html, #root, .app, .container {
   left: 50%;
   margin-top: -50px;
   margin-left: -100px;
+  background-color: #282c34;
 }
 
 @keyframes spin {

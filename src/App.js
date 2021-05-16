@@ -3,6 +3,7 @@ import { observer } from 'mobx-react';
 import UserStore from './stores/UserStore';
 import LoginForm from './components/Loginform';
 import SubmitButton from './components/SubmitButton';
+import Loading from './components/Loading';
 
 import './assets/css/App.css';
 
@@ -70,8 +71,8 @@ class App extends React.Component {
     if (UserStore.loading) {
       return (
         <div className="app">
-          <div classname='container'>
-            <div class="loader"></div>
+          <div className='container'>
+            <Loading/>
           </div>
         </div>
       );
@@ -82,7 +83,7 @@ class App extends React.Component {
       if (UserStore.isLoggedIn) {
         return (
           <div className="app">
-            <div classname='container'>
+            <div className='container'>
               Welcome {UserStore.username}
 
               <SubmitButton
@@ -98,7 +99,7 @@ class App extends React.Component {
 
       return (
         <div className="app">
-          <div classname='container'>
+          <div className='container'>
             <LoginForm />
           </div>
         </div>
