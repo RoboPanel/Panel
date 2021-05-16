@@ -1,10 +1,10 @@
 import React from 'react';
 import { observer } from 'mobx-react';
 import UserStore from './stores/UserStore';
-import LoginForm from './Loginform';
-import SubmitButton from './SubmitButton';
+import LoginForm from './components/Loginform';
+import SubmitButton from './components/SubmitButton';
 
-import './App.css';
+import './assets/css/App.css';
 
 class App extends React.Component {
 
