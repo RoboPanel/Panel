@@ -104,12 +104,25 @@ class App extends React.Component {
       }
 
       return (
-        
-        <div className="app">
-          <div className='container'>
-            <LoginForm />
+        <Router>
+          <div>
+            <nav>
+              <ul>
+                <li>
+                  <Link to="/">LoginForm</Link>
+                </li>
+              </ul>
+            </nav>
+    
+            {/* A <Switch> looks through its children <Route>s and
+                renders the first one that matches the current URL. */}
+            <Switch>
+              <Route path="/">
+                <LoginForm />
+              </Route>
+            </Switch>
           </div>
-        </div>
+        </Router>
       );
     }
   }
