@@ -5,18 +5,6 @@ function Loading() {
   return (
     <div className="content loadingWrapper">
       <div className="loadingSpinnner">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
       </div>
     </div>
   );
