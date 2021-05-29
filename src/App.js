@@ -14,16 +14,19 @@ import "./assets/css/App.css";
 class App extends React.Component {
   async componentDidMount() {
     try {
-      let res = await fetch("/isLoggedIn", {
-        method: "post",
+      let res = await fetch("/user/me", {
+        method: "get",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
       });
 
-      let result = await res.json();
+      let returnedResult = await res.json();
 
+      console.log(returnedResult)
+
+      /*
       if (result && result.success) {
         UserStore.loading = false;
         UserStore.isLoggedIn = true;
@@ -32,6 +35,7 @@ class App extends React.Component {
         UserStore.loading = false;
         UserStore.isLoggedIn = false;
       }
+      */
     } catch (e) {
       UserStore.loading = false;
       UserStore.isLoggedIn = false;
