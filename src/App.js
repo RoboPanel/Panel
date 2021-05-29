@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route/*, Link*/ } from "react-router-dom";
 import { observer } from "mobx-react";
 
 //COMPONENTS
@@ -72,36 +71,20 @@ class App extends React.Component {
     } else {
       if (UserStore.isLoggedIn) {
         return (
-          <Router>
-            {/* A <Switch> looks through its children <Route>s and
-                  renders the first one that matches the current URL. */}
-            <Switch>
-              <Route path="/dashboard">
-                <div className="app">
-                  <div className="container">
-                    <Dashboard />
-                  </div>
-                </div>
-              </Route>
-            </Switch>
-          </Router>
+          <div className="app">
+            <div className="container">
+              <Dashboard />
+            </div>
+          </div>
         );
       }
 
       return (
-        <Router>
-          {/* A <Switch> looks through its children <Route>s and
-                renders the first one that matches the current URL. */}
-          <Switch>
-            <Route path="/">
-              <div className="app">
-                <div className="container">
-                  <LoginForm />
-                </div>
-              </div>
-            </Route>
-          </Switch>
-        </Router>
+        <div className="app">
+          <div className="container">
+            <LoginForm />
+          </div>
+        </div>
       );
     }
   }
