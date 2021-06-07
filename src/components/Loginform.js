@@ -2,6 +2,8 @@ import React from 'react';
 import InputField from './InputField';
 import SubmitButton from './SubmitButton';
 import UserStore from '../stores/UserStore';
+require('dotenv').config()
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 class LoginForm extends React.Component {
 
@@ -47,7 +49,7 @@ class LoginForm extends React.Component {
 
     try {
 
-      let res = await fetch(`${process.env.BACKEND_URL}/users/login`, {
+      let res = await fetch(`http://localhost:8080/users/login`, {
         method: 'post',
         headers: {
           'Accept': 'application/json',
@@ -55,7 +57,8 @@ class LoginForm extends React.Component {
         },
         body: JSON.stringify({
           username: this.state.username,
-          password: this.state.password
+          password: this.state.password,
+          auth:  "AnjaSDNKAJSDnKASJDnnjasdj"
         })
       });
 

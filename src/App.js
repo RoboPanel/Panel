@@ -7,9 +7,11 @@ import LoginForm from "./components/Loginform";
 import Loading from "./components/Loading";
 
 //PAGES
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/dashboard";
 
 import "./assets/css/App.css";
+
+require('dotenv').config()
 
 class App extends React.Component {
   async componentDidMount() {
